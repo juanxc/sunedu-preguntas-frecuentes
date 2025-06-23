@@ -260,11 +260,6 @@
     box-shadow: 0 15px 40px rgba(25, 118, 210, 0.4);
 }
 
-.pagalo-btn::after {
-    content: ' →';
-    margin-left: 10px;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
