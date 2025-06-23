@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas Frecuentes</title>
+    <link rel="icon" type="image/png" href="https://enlinea.sunedu.gob.pe/img/sunedu-logo-small.png">
+    <link rel="stylesheet" href="estilos-preguntas-frecuentes.css" />
+    <link rel="stylesheet" href="metodos-pago.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div style="float: right; justify-content: right; margin: 0px;">
+            <div class="btnCloseModal"></div>
+        </div>
+
+        <h1 class="title">
+            PREGUNTAS <span class="highlight">FRECUENTES</span>
+        </h1>
+
+        <div class="divider"></div>
+
+        <!-- todas las opciones de preguntas frecuentes -->
+        <div class="buttons-grid">
+            <div class="centered-row">
+                <button class="button-inicio cyan" onclick="goToSection('constancia-inscripcion')">
+                    Constancia<br>de Inscripción
+                </button>
+
+                <button class="button-inicio cyan" onclick="goToSection('constancia-verificacion')">
+                    Constancia<br>de Verificación
+                </button>
+            </div>
+
+            <button class="button-inicio blue" onclick="goToSection('reconocimiento-grados')">
+                Reconocimiento de<br>Grados y títulos otorgados<br>en el extranjero
+            </button>
+
+            <button class="button-inicio blue" onclick="goToSection('metodos-pago')">
+                Métodos de Pago
+            </button>
+
+            <button class="button-inicio blue" onclick="goToSection('acervo-academico')">
+                Acervo académico<br>(Constancia de Ingreso,<br>Egreso, etc).
+            </button>
+
+            <button class="button-inicio blue" onclick="goToSection('universidades-licenciadas')">
+                Universidades<br>licenciadas
+            </button>
+
+            <button class="button-inicio blue" onclick="goToSection('universidades-denegadas')">
+                Universidades con<br>licencia denegada
+            </button>
+
+            <button class="button-inicio blue" onclick="goToSection('devolucion-dinero')">
+                Devolución<br>de Dinero
+            </button>
+
+            <div class="centered-row">
+                <button class="button-inicio blue" onclick="goToSection('denuncias')">
+                    Denuncias
+                </button>
+
+                <button class="button-inicio blue" onclick="goToSection('direccion-contacto')">
+                    Dirección y<br>Contacto
+                </button>
+            </div>
+
+        </div>
+
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion constancia de inscripcion -->
+        <section id="constancia-inscripcion">
+            <div class="cuadro-container">
+                <div class="cuadro-body">
+                    <div class="left-part">
+                        <div class="recuadro-left">
+                            <div class="img-left-part-ci img-link"></div>
+                            <div class="recuadro-titulo"><span class="txtUpOps">Solicita tu</span><br><span
+                                    class="txtDownOps">Constancia de
+                                    Inscripción</span></div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="subcontainer">
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUÉ ES?</div>
+                                <div class="respuesta">Es un documento que acredita que el grado académico o título
+                                    universitario se
+                                    encuentra registrado ante la SUNEDU.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUIÉNES LA SOLICITAN?</div>
+                                <div class="respuesta">Los ciudadanos, instituciones, colegios profesionales, centros
+                                    laborales,
+                                    entre otros.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">
+                                    <span>¿CUÁL ES EL COSTO?</span>
+                                    <button class="button-small">S/ 10.00</button>
+                                </div>
+                            </div>
+                            <div class="texto-informativo-container">
+                                <div class="texto-informativo">Si tu grado o título no figura en el registro, debes
+                                    comunicarte con <span class="hide-on-small"><br></span> tu casa de estudios para que
+                                    solicite la inscripción ante Sunedu.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="divider-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cuadro-botones">
+                    <button class="button-medium" onclick="goToSection('metodos-pago')"><span class="bm-text">Métodos de
+                            Pago</span><span class="arrow-unicode">⟶</span></button>
+                    <a class="button-medium" href="https://enlinea.sunedu.gob.pe/" target="_blank"><span
+                            class="bm-text">Emitir Constancia Online</span><span class="arrow-unicode">⟶</span></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion constancia de verificacion -->
+        <section id="constancia-verificacion">
+            <div class="cuadro-container">
+                <div class="cuadro-body">
+                    <div class="left-part">
+                        <div class="recuadro-left">
+                            <div class="img-left-part-cv img-link"></div>
+                            <div class="recuadro-titulo"><span class="txtUpOps">Solicita tu</span><br><span
+                                    class="txtDownOps">Constancia de
+                                    Verificación<br>de Datos de Autoridades</span></div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="subcontainer">
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUÉ ES?</div>
+                                <div class="respuesta">Es un documento que acredita que el secretario general o la
+                                    autoridad que haga sus veces en su casa de estudios, se encuentra registrada.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿PARA QUÉ SE SOLICITA?</div>
+                                <div class="respuesta">Para presentar el documento en trámites en colegios profesionales
+                                    o en el Ministerio de Relaciones Exteriores, en caso de que se necesiten apostillar
+                                    los documentos para el extranjero.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿CUÁLES SON LAS CONDICIONES?</div>
+                                <div class="respuesta">a. Que sea un documento académico.<br>b. Que tenga los datos del
+                                    ciudadano interesado.<br>c. Que el documento esté firmado por el Secretario General
+                                    o la autoridad que haga sus veces. </div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">
+                                    <span>¿CUÁL ES EL COSTO?</span>
+                                    <button class="button-small">S/ 13.10</button>
+                                </div>
+                            </div>
+                            <div class="texto-informativo-container">
+                                <div class="texto-informativo"><b>RECUERDA QUE:</b><br>· Si es documento físico,
+                                    escanear y mantener colores originales.<br>· Si es documento digital, no editar el
+                                    archivo electrónico.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="divider-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cuadro-botones">
+                    <button class="button-medium" onclick="goToSection('metodos-pago')"><span class="bm-text">Métodos de
+                            Pago</span><span class="arrow-unicode">⟶</span></button>
+                    <a class="button-medium" href="https://enlinea.sunedu.gob.pe/" target="_blank"><span
+                            class="bm-text">Emitir Constancia Online</span><span class="arrow-unicode">⟶</span></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion reconocimiento de grados -->
+        <section id="reconocimiento-grados">
+            <div class="cuadro-container">
+                <div class="cuadro-body">
+                    <div class="left-part">
+                        <div class="recuadro-left">
+                            <div class="img-left-part-rg img-link"></div>
+                            <div class="recuadro-titulo"><span class="txtUpOps">Solicitud virtual de<br>Reconocimiento
+                                    de</span><span class="txtDownOps">Grados<br>y Títulos Extranjeros</span></div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="subcontainer">
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUÉ ES?</div>
+                                <div class="respuesta">Es el acto administrativo mediante el cual la SUNEDU otorga
+                                    eficacia a los grados y/o títulos obtenidos en el extranjero, conforme a los
+                                    criterios de calidad o las obligaciones jurídicas asumidas por la República del Perú
+                                    en virtual de un tratado.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUIÉNES PUEDEN SOLICITARLO?</div>
+                                <div class="respuesta">Toda persona que haya obtenido un grado y/o título en el
+                                    extranjero.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿CÓMO SE REALIZA?</div>
+                                <div class="respuesta">· De manera virtual: envía los requisitos al correo
+                                    "reconocimientogradosytitulos@sunedu.gob.pe".<br>· De manera presencial: en nuestra
+                                    sede principal Calle Aldabas N° 337 - Urb. Las Gardenias, Santiago de Surco, en el
+                                    horario de Lunes a Viernes de 8:30 a.m. a 4:30 p.m. </div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">
+                                    <span>¿CUÁL ES EL COSTO?</span>
+                                    <button class="button-small">S/ 1188.50</button>
+                                </div>
+                                <div class="respuesta">· Migrante Retornado <button class="button-small">S/
+                                        594.25</button></div>
+                            </div>
+                            <div class="texto-informativo-container">
+                                <div class="texto-informativo no-content"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="divider-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cuadro-botones">
+                    <button class="button-medium" onclick="goToSection('metodos-pago')"><span class="bm-text">Métodos de
+                            Pago</span><span class="arrow-unicode">⟶</span></button>
+                    <a class="button-medium"
+                        href="https://www.sunedu.gob.pe/presentar-solicitud-reconocimiento-grados-titulos-forma-virtual/"
+                        target="_blank"><span class="bm-text">Inicia tu Trámite</span><span
+                            class="arrow-unicode">⟶</span></a>
+                    <a class="button-medium"
+                        href="https://www.sunedu.gob.pe/procedimiento-de-reconocimiento-de-grados-y-titulos-extranjeros/"
+                        target="_blank"><span class="bm-text">Requisitos y más información</span><span
+                            class="arrow-unicode">⟶</span></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion metodos de pago -->
+        <section id="metodos-pago">
+            <div class="container-mp">
+                <h1 class="title-mp">MÉTODOS DE PAGO</h1>
+
+                <div class="payment-methods">
+                    <div class="method-card">
+                        <div class="icon-container">
+                            <div class="web-icon">
+                                <div class="laptop"></div>
+                                <div class="phone"></div>
+                            </div>
+                        </div>
+                        <h3 class="method-title">Trámite vía web:</h3>
+                        <p class="method-description">
+                            El pago se realiza a través de la web de Pagalo.pe
+                        </p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="icon-container">
+                            <div class="wallet">
+                                <div class="button-circle"></div>
+                            </div>
+                        </div>
+                        <h3 class="method-title">Trámite presencial:</h3>
+                        <p class="method-description">
+                            El pago se realiza en nuestra ventanilla con tarjeta de crédito o débito, y con las
+                            aplicaciones Yape o Plin (Se escanea QR)
+                        </p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="icon-container">
+                            <div class="cash-wallet">
+                                <div class="button-circle"></div>
+                            </div>
+                        </div>
+                        <h3 class="method-title">¿Deseas pagar con efectivo?</h3>
+                        <p class="method-description">
+                            Deberás hacerlo en las entidades bancarias autorizadas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <div class="info-card">
+                        <div class="info-title">Constancias</div>
+                        <div class="info-content">
+                            <p>Los códigos de pago en el Banco de la Nación son:</p>
+                            <ul>
+                                <li>CONSTANCIA DE INSCRIPCIÓN: S/ 10.00 - CÓDIGO: 0001</li>
+                                <li>CONSTANCIA DE VERIFICACIÓN: S/ 13.10 - CÓDIGO: 0008</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-title">Reconocimiento</div>
+                        <div class="info-content">
+                            <p>Formas de pago para trámites de Reconocimiento: S/1188.50</p>
+                            <ul>
+                                <li>BANCO DE LA NACIÓN: CÓDIGO: 0003</li>
+                                <li>SCOTIABANK (CÓDIGO DE VENTANILLA 03)</li>
+                                <li>A TRAVÉS DE LA APP DE INTERBANK O DE SCOTIABANK</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-button">
+                    <a href="https://pagalo.pe/" target="_blank" class="pagalo-btn">Ir a PAGALO.PE</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function goToSection(section) {
+            window.location.href = '#' + section;
+        }
+    </script>
+</body>
+
+</html>
