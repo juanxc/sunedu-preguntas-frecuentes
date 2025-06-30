@@ -1,19 +1,23 @@
 .container-mp {
     max-width: 1200px;
     margin: 0 auto;
-    background: linear-gradient(135deg, #00bcd4, #1fb3d3);
+    background-color: rgb(0 200 242);
     border-radius: 30px;
-    padding: 40px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0px;
 }
 
 .title-mp {
     text-align: center;
     color: white;
-    font-size: 2.5rem;
+    font-size: clamp(17px, 2.5vw, 20px);
     font-weight: bold;
-    margin-bottom: 40px;
-    letter-spacing: 2px;
+    margin-bottom: 34px;
+    letter-spacing: 1px;
+    font-family: 'Poppins-Medium';
 }
 
 .payment-methods {
@@ -26,7 +30,7 @@
 .method-card {
     background: white;
     border-radius: 20px;
-    padding: 30px;
+    padding: 24px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -38,22 +42,25 @@
 }
 
 .icon-container {
-    background: linear-gradient(45deg, #2196f3, #1976d2);
     border-radius: 20px;
-    padding: 30px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 120px;
     position: relative;
-    overflow: hidden;
+    background-color: rgb(0 44 178);
+    overflow: visible;
 }
 
 .web-icon {
-    display: flex;
     align-items: center;
-    gap: 15px;
+    height: auto;
+    position: absolute;
+    top: -16px;
+    max-width: 100%;
+    object-fit: contain;
+    max-height: 127px;
 }
 
 .laptop {
@@ -168,12 +175,13 @@
 }
 
 .method-title {
-    color: #00bcd4;
-    font-size: 1.3rem;
+    color: rgb(0 200 242);
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: clamp(13px, 2.5vw, 15.8px);
+    font-family: 'Poppins-Medium';
 }
 
 .method-description {
@@ -190,29 +198,35 @@
 }
 
 .info-card {
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    padding: 25px;
     backdrop-filter: blur(10px);
+    background-color: rgb(0 156 229);
+    padding-bottom: 4px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .info-title {
-    background: #1976d2;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1rem;
+    background: white;
+    color: rgb(0 48 197);
+    padding: 2px 11px;
+    border-radius: 12px;
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 15px;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1px;
+    position: relative;
+    top: -16px;
 }
 
 .info-content {
     color: white;
-    font-size: 0.95rem;
+    font-size: 15px;
     line-height: 1.6;
+    position: relative;
+    top: -7px;
 }
 
 .info-content ul {
@@ -221,18 +235,7 @@
 }
 
 .info-content li {
-    margin-bottom: 8px;
-    padding-left: 20px;
     position: relative;
-}
-
-.info-content li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: #ffc107;
-    font-weight: bold;
-    font-size: 1.2rem;
 }
 
 .cta-button {
@@ -240,24 +243,27 @@
 }
 
 .pagalo-btn {
-    background: #1976d2;
+    background-color: rgb(1 43 178);
     color: white;
-    padding: 18px 40px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 1.2rem;
+    border: none;
+    border-radius: 44px;
+    font-size: clamp(17px, 2vw, 19px);
     font-weight: bold;
-    display: inline-block;
+    align-items: center;
+    cursor: pointer;
     transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 10px 30px rgba(25, 118, 210, 0.3);
+    white-space: nowrap;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 18px 22px;
+    position: relative;
+    bottom: -13px;
 }
 
 .pagalo-btn:hover {
-    background: #1565c0;
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(25, 118, 210, 0.4);
+    transform: translateY(-1px);
+    background-color: rgb(1, 50, 200);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive Design */
@@ -282,7 +288,7 @@
 
     .icon-container {
         padding: 20px;
-        min-height: 100px;
+        min-height: 120px;
     }
 
     .method-title {
