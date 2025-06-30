@@ -373,6 +373,10 @@ h3 {
         gap: 15px;
     }
 
+    .cuadro-container {
+        align-items: center;
+    }
+
     .cuadro-body {
         flex-direction: column;
     }
@@ -390,6 +394,14 @@ h3 {
 
     .right-part {
         width: 100%;
+    }
+
+    .cuadro-botones.mas-de-dos-botones {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        margin-bottom: -34px;
+        gap: 5px;
     }
 }
 
@@ -456,6 +468,10 @@ h3 {
     }
 
     .divider-right {
+        display: none;
+    }
+
+    .texto-informativo.no-content{
         display: none;
     }
 }
