@@ -13,7 +13,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # Needed to access all branches
+
+      - name: Create redirecting index.html
+        run: |
+          echo '<!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta http-equiv="refresh" content="0; url=preguntas-frecuentes.html" />
+              <title>Redirecting...</title>
+          </head>
+          <body>
+              <p>If you are not redirected automatically, follow this <a href="preguntas-frecuentes.html">link</a>.</p>
+          </body>
+          </html>' > index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
