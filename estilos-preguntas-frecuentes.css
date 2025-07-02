@@ -170,7 +170,12 @@ h3 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+}
+
+.devolucion-dinero-container{
+    padding-bottom: 0px;
+    position: relative;
 }
 
 .cuadro-body {
@@ -231,6 +236,10 @@ h3 {
     background: url("assets/icons/reconocimiento-grados.png");
 }
 
+.img-left-part-dd {
+    background: url("assets/icons/devolucion-dinero.png");
+}
+
 .txtUpOps {
     color: #606060;
     font-weight: bold;
@@ -251,7 +260,6 @@ h3 {
 .cuadro-botones {
     display: flex;
     gap: 24px;
-    padding-right: 126px;
     margin-bottom: -50px;
     padding-top: 6px;
 }
@@ -377,6 +385,11 @@ h3 {
         align-items: center;
     }
 
+    .devolucion-dinero-container{
+        padding-bottom: 0px;
+        position: relative;
+    }
+
     .cuadro-body {
         flex-direction: column;
     }
@@ -439,6 +452,11 @@ h3 {
     .cuadro-container {
         padding: 20px;
         align-items: center;
+    }
+
+    .devolucion-dinero-container{
+        padding-bottom: 0px;
+        position: relative;
     }
 
     .recuadro-left {
