@@ -8,6 +8,8 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .title-mp {
@@ -61,117 +63,6 @@
     max-width: 100%;
     object-fit: contain;
     max-height: 127px;
-}
-
-.laptop {
-    width: 80px;
-    height: 50px;
-    background: #333;
-    border-radius: 8px;
-    position: relative;
-}
-
-.laptop::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 15px;
-    background: #e53935;
-    border-radius: 4px;
-}
-
-.phone {
-    width: 30px;
-    height: 50px;
-    background: #333;
-    border-radius: 8px;
-    position: relative;
-}
-
-.phone::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 3px;
-    right: 3px;
-    bottom: 8px;
-    background: #e53935;
-    border-radius: 3px;
-}
-
-.wallet {
-    width: 80px;
-    height: 50px;
-    background: #8b4513;
-    border-radius: 8px;
-    position: relative;
-}
-
-.wallet::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: 10px;
-    width: 35px;
-    height: 25px;
-    background: #00bcd4;
-    border-radius: 4px;
-    transform: rotate(-10deg);
-}
-
-.wallet::after {
-    content: '';
-    position: absolute;
-    top: -8px;
-    right: 8px;
-    width: 35px;
-    height: 25px;
-    background: #26c6da;
-    border-radius: 4px;
-    transform: rotate(15deg);
-}
-
-.cash-wallet {
-    width: 80px;
-    height: 50px;
-    background: #8b4513;
-    border-radius: 8px;
-    position: relative;
-}
-
-.cash-wallet::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    right: 5px;
-    width: 40px;
-    height: 20px;
-    background: #4caf50;
-    border-radius: 2px;
-}
-
-.cash-wallet::after {
-    content: '';
-    position: absolute;
-    top: -12px;
-    right: 8px;
-    width: 35px;
-    height: 18px;
-    background: #66bb6a;
-    border-radius: 2px;
-}
-
-.button-circle {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 15px;
-    background: #ffc107;
-    border-radius: 50%;
 }
 
 .method-title {
@@ -240,6 +131,9 @@
 
 .cta-button {
     text-align: center;
+    display: flex;
+    margin-bottom: -24px;
+    justify-content: center;
 }
 
 .pagalo-btn {
@@ -247,7 +141,7 @@
     color: white;
     border: none;
     border-radius: 44px;
-    font-size: clamp(17px, 2vw, 19px);
+    font-size: clamp(14px, 2vw, 16px);
     font-weight: bold;
     align-items: center;
     cursor: pointer;
@@ -255,9 +149,7 @@
     white-space: nowrap;
     text-decoration: none;
     font-family: sans-serif;
-    padding: 18px 22px;
-    position: relative;
-    bottom: -13px;
+    padding: 11px 18px;
 }
 
 .pagalo-btn:hover {
@@ -268,13 +160,8 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        padding: 20px;
-    }
-
-    .title {
-        font-size: 2rem;
-        margin-bottom: 30px;
+    .title-mp {
+        margin-bottom: 20px;
     }
 
     .payment-methods {
@@ -309,33 +196,30 @@
     }
 
     .pagalo-btn {
-        padding: 15px 30px;
-        font-size: 1rem;
+        padding: 12px 22px;
+        bottom: 0px;
     }
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 15px;
+    .container-mp {
+        padding-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .title {
-        font-size: 1.8rem;
+    .info-title{
+        position: static;
     }
 
-    .laptop {
-        width: 60px;
-        height: 40px;
+    .info-content {
+        position: static;
+        padding-top: 10px;
     }
 
-    .phone {
-        width: 25px;
-        height: 40px;
+    .cta-button {
+        margin-bottom: 0;
     }
 
-    .wallet,
-    .cash-wallet {
-        width: 60px;
-        height: 40px;
-    }
 }

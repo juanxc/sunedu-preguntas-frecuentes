@@ -37,8 +37,8 @@
     background-color: rgb(0 200 242);
     border-radius: 30px;
     color: white;
-    padding: 17px 20px;
-    font-size: clamp(16px, 2vw, 20px);
+    padding: 8px 16px;
+    font-size: clamp(14px, 2vw, 18px);
     white-space: nowrap;
 }
 
@@ -82,5 +82,11 @@
 
     .paso-container {
         width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pasos-container {
+        margin-bottom: 12px;
     }
 }
