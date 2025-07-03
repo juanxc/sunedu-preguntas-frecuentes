@@ -258,6 +258,10 @@ h3 {
     background: url("assets/icons/denuncias.png");
 }
 
+.img-left-part-dc {
+    background: url("assets/icons/direccion-contacto.png");
+}
+
 .txtUpOps {
     color: #606060;
     font-weight: bold;
@@ -313,7 +317,7 @@ h3 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
 }
 
 .pregunta-denuncia {
@@ -458,10 +462,59 @@ h3 {
     color: rgb(0 200 242);
 }
 
-.long-word{    
+.long-word {    
     word-break: break-word;
     overflow-wrap: break-word;
     word-wrap: break-word;
+}
+
+.mac-list {
+    padding-left: 0 !important;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem 2rem;
+    padding-top: 4px;
+}
+
+.mac-list li {
+    list-style-type: none;
+}
+
+.contacto-icon {
+    width: 100%;
+    max-width: 20px;
+    height: auto;
+}
+
+.pregunta-contacto {
+    flex-wrap: nowrap;
+}
+
+.respuesta-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  color: #012bb2;
+}
+
+.back-to-top svg {
+  width: 100%;
+  height: 100%;
 }
 
 /* Tablet styles */
@@ -609,6 +662,16 @@ h3 {
     .texto-informativo.no-content{
         display: none;
     }
+
+    .mac-list {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+    }
+
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+    }
 }
 
 /* Small mobile styles */
@@ -675,6 +738,10 @@ h3 {
         position: static;
     }
 
+    .button-text-align-center {
+        text-align: center;
+    }
+
     .texto-informativo-container.no-content{
         display: none;
     }
@@ -685,6 +752,16 @@ h3 {
 
     .subcontainer-sin-padding-bottom {
         padding-bottom: 0px;
+    }
+
+    .mac-list {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1rem;
+    }
+
+    .back-to-top {
+        width: 35px;
+        height: 35px;
     }
 }
 
