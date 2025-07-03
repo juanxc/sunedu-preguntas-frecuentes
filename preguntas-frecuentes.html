@@ -47,13 +47,13 @@
                 Acervo académico<br>(Constancia de Ingreso,<br>Egreso, etc).
             </button>
 
-            <button class="button-inicio blue" onclick="goToSection('universidades-licenciadas')">
+            <a href="https://www.sunedu.gob.pe/lista-de-universidades-licenciadas/" target="_blank" class="button-inicio blue">
                 Universidades<br>licenciadas
-            </button>
+            </a>
 
-            <button class="button-inicio blue" onclick="goToSection('universidades-denegadas')">
+            <a href="https://www.sunedu.gob.pe/lista-de-universidades-denegadas/" target="_blank" class="button-inicio blue">
                 Universidades con<br>licencia denegada
-            </button>
+            </a>
 
             <button class="button-inicio blue" onclick="goToSection('devolucion-dinero')">
                 Devolución<br>de Dinero
@@ -119,7 +119,7 @@
                 <div class="cuadro-botones">
                     <button class="button-medium" onclick="goToSection('metodos-pago')"><span class="bm-text">Métodos de
                             Pago</span><span class="arrow-unicode">⟶</span></button>
-                    <a class="button-medium" href="https://enlinea.sunedu.gob.pe/" target="_blank"><span
+                    <a class="button-medium pagalo-btn-texto-largo" href="https://enlinea.sunedu.gob.pe/" target="_blank"><span
                             class="bm-text">Emitir Constancia Online</span><span class="arrow-unicode">⟶</span></a>
                 </div>
             </div>
@@ -242,7 +242,7 @@
                         href="https://www.sunedu.gob.pe/presentar-solicitud-reconocimiento-grados-titulos-forma-virtual/"
                         target="_blank"><span class="bm-text">Inicia tu Trámite</span><span
                             class="arrow-unicode">⟶</span></a>
-                    <a class="button-medium"
+                    <a class="button-medium pagalo-btn-texto-largo"
                         href="https://www.sunedu.gob.pe/procedimiento-de-reconocimiento-de-grados-y-titulos-extranjeros/"
                         target="_blank"><span class="bm-text">Requisitos y más información</span><span
                             class="arrow-unicode">⟶</span></a>
@@ -260,7 +260,7 @@
                 <div class="payment-methods">
                     <div class="method-card">
                         <div class="icon-container">
-                            <img src="assets/icons/web.png" alt="tramite via web" class="web-icon">
+                            <img src="assets/icons/web.png" alt="tramite via web" class="web-icon web-icon-tramite-via-web">
                         </div>
                         <h3 class="method-title">Trámite vía web:</h3>
                         <p class="method-description">
@@ -451,6 +451,96 @@
             </div>
         </section>
 
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion acervo academico -->
+        <section id="acervo-academico">
+            <div class="cuadro-container devolucion-dinero-container">
+                <div class="cuadro-body">
+                    <div class="left-part">
+                        <div class="recuadro-left">
+                            <div class="img-left-part-aa img-link"></div>
+                            <div class="recuadro-titulo"><span class="txtUpOps">Acervo Académico</span><br><span class="txtUpOps">de </span><span
+                                    class="txtDownOps">Universidades</span><br><span class="txtDownOps">No Licenciadas</span></div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="subcontainer">
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUÉ ES?</div>
+                                <div class="respuesta">Es la documentación académica otorgada por la institución cesada. La Sunedu remite copias simples de los documentos integrantes del acervo académico para los fines que los interesados estimen pertinentes.</div>
+                            </div>
+                            <div class="pregunta-container pregunta-container-fut">
+                                <div class="pregunta">¿CÓMO SE SOLICITA?</div>
+                                <div class="respuesta">A través de mesa de partes virtual o presencialmente en nuestra sede principal de Surco.</div>
+                            </div>
+                            <div class="button-fut">
+                                <a class="button-small button-small-fut" href="https://enlinea.sunedu.gob.pe/documentos/Formulario_unico_de_tramite.docx">DESCARGA EL FUT <span class="arrow-unicode">⟶</span></a>
+                            </div>
+                        </div>
+                        <div><div class="divider-right divider-right-aa"></div></div>
+                        <div class="subcontainer-2">
+                            <div class="pregunta-container">
+                                <div class="pregunta">
+                                    <span>¿CUÁL ES EL PLAZO DE ATENCIÓN?</span>
+                                </div>
+                                <div class="respuesta">El plazo es de 30 días hábiles desde presentada la solicitud.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">
+                                    <span>¿TIENE ALGÚN COSTO?</span>
+                                </div>
+                                <div class="respuesta">No. El trámite es gratuito.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pasos-container">
+                    <div class="pasos">
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 1</div><div class="paso-texto-titulo">Ingresa a la web de "Sunedu en línea", opción "Mesa de Partes":</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/devolucion-dinero-pasos/dd-paso1.png" /></div>
+                        </div>
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 2</div><div class="paso-texto-titulo">Registra tus datos y haz clic en siguiente:</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/devolucion-dinero-pasos/dd-paso2.png" /></div>
+                        </div>
+                    </div>
+                    
+                    <div class="pasos">
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 3</div><div class="paso-texto-titulo">Se deslizará una pestaña. Descarga el "FUT" y completa tus datos:</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/acervo-academico-pasos/aa-paso3.png" /></div>
+                        </div>
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 4</div><div class="paso-texto-titulo">Selecciona "Solicitud" en tipo de documento:</div></div>
+                            <div class="paso-contenido"><img class="paso-img paso-img-overflow" src="assets/icons/devolucion-dinero-pasos/dd-paso4.png" /></div>
+                        </div>
+                    </div>
+
+                    <div class="pasos">
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 5</div><div class="paso-texto-titulo">Selecciona "Oficina de atención al ciudadano y gestión documental":</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/acervo-academico-pasos/aa-paso5.png" /></div>
+                        </div>
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 6</div><div class="paso-texto-titulo">Una vez cargada la solicitud del "FUT" haz click en "Siguiente" y enviar.</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/devolucion-dinero-pasos/dd-paso6.png" /></div>
+                        </div>
+                    </div>
+                    <div class="subcontainer-2 subcontainer-2-texto-centrado">
+                        <div class="pregunta-container">
+                            <div class="respuesta">*En caso tu Universidad actualmente esté licenciada deberás solicitarle tus documentos directamente.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-button">
+                    <a href="https://www.sunedu.gob.pe/proceso-cese-actividades-universidades-escuelas-posgrado-flujograma/" target="_blank" class="pagalo-btn pagalo-btn-texto-largo">REVISA AQUÍ EL CESE DE UNIVERSIDADES <span
+                            class="arrow-unicode">⟶</span></a>
+                </div>
+            </div>
+        </section>
+        
         <div class="divider-sin-linea"></div>
     </div>
 

@@ -147,6 +147,7 @@ h3 {
     justify-content: center;
     line-height: 1.2;
     font-family: sans-serif;
+    text-decoration: none;
 }
 
 .button-inicio:hover {
@@ -249,6 +250,10 @@ h3 {
     background: url("assets/icons/registro-nacional-grados.png");
 }
 
+.img-left-part-aa {
+    background: url("assets/icons/acervo-academico.png");
+}
+
 .txtUpOps {
     color: #606060;
     font-weight: bold;
@@ -280,6 +285,7 @@ h3 {
 
 .subcontainer-2{
     padding-left: 35px;
+    padding-right: 14px;
 }
 
 .pregunta-container {
@@ -304,18 +310,41 @@ h3 {
     line-height: 1.4;
 }
 
+.pregunta-container-fut {
+    margin-bottom: 8px;
+}
+
+.button-fut {
+    position: relative;
+    z-index: 2;
+    display: flex;
+}
+
 .button-small {
     background-color: rgb(1 43 178);
     color: white;
     border: none;
     border-radius: 44px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px 10px;
     font-size: clamp(13px, 2vw, 15px);
     font-weight: bold;
     white-space: nowrap;
+}
+
+.button-small-fut{
+    padding: 0px 15px;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+.button-small-fut:hover {
+    transform: translateY(-1px);
+    background-color: rgb(1, 50, 200);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .texto-informativo-container {
@@ -353,6 +382,12 @@ h3 {
 
 .divider-right-rng{
     margin-top: -34px;
+    position: relative;
+    z-index: 1;
+}
+
+.divider-right-aa {
+    margin-top: -30px;
     position: relative;
     z-index: 1;
 }
@@ -455,8 +490,8 @@ h3 {
     }
 
     .btnCloseModal {
-        top: 15px;
-        right: 15px;
+        top: 9px;
+        right: 9px;
         width: 35px;
         height: 35px;
     }
@@ -505,6 +540,11 @@ h3 {
 
     .subcontainer-2 {
         padding-left: 14px;
+        padding-top: 10px;
+    }
+
+    .subcontainer-2-texto-centrado {
+        text-align: center;
     }
 
     .cuadro-botones {
@@ -558,6 +598,10 @@ h3 {
 
     .cuadro-body {
         margin-bottom: 7px;
+    }
+
+    .left-part {
+        padding: 0px 10px;
     }
 
     .recuadro-left {
