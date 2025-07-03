@@ -254,6 +254,10 @@ h3 {
     background: url("assets/icons/acervo-academico.png");
 }
 
+.img-left-part-de {
+    background: url("assets/icons/denuncias.png");
+}
+
 .txtUpOps {
     color: #606060;
     font-weight: bold;
@@ -283,16 +287,24 @@ h3 {
     padding-bottom: 14px;
 }
 
+.subcontainer-sin-padding-bottom {
+    padding-bottom: 0px;
+}
+
 .subcontainer-2{
     padding-left: 35px;
     padding-right: 14px;
+}
+
+.subcontainer-3 {
+    margin-top: 17px;
 }
 
 .pregunta-container {
     margin-bottom: 17px;
 }
 
-.pregunta-container .pregunta {
+.pregunta {
     color: rgb(16 200 239);
     font-size: clamp(15px, 2.5vw, 17px);
     font-weight: bold;
@@ -304,14 +316,31 @@ h3 {
     gap: 10px;
 }
 
+.pregunta-denuncia {
+    font-size: clamp(14px, 2vw, 16px);
+}
+
 .pregunta-container .respuesta {
     color: #636467;
     font-size: clamp(12px, 2vw, 13.4px);
     line-height: 1.4;
 }
 
+.respuesta ul {
+    list-style-type: square;
+    padding-left: 17px;
+}
+
 .pregunta-container-fut {
     margin-bottom: 8px;
+}
+
+.pregunta-container-denuncias {
+    font-size: clamp(14px, 2vw, 16px);
+}
+
+.pregunta-container-sin-margin-bottom {
+    margin-bottom: 0px;
 }
 
 .button-fut {
@@ -480,6 +509,16 @@ h3 {
         padding-right: 0px;
         gap: 5px;
     }
+
+    .subcontainer-3 {
+        padding-left: 35px;
+        padding-bottom: 0px;
+        padding-right: 14px;
+    }
+
+    .cuadro-body-sin-margin-bottom {
+        margin-bottom: 0px;
+    }
 }
 
 /* Mobile Styles */
@@ -541,6 +580,11 @@ h3 {
     .subcontainer-2 {
         padding-left: 14px;
         padding-top: 10px;
+    }
+
+    .subcontainer-3 {
+        margin-top: 17px;
+        padding-left: 13px;
     }
 
     .subcontainer-2-texto-centrado {
@@ -633,6 +677,14 @@ h3 {
 
     .texto-informativo-container.no-content{
         display: none;
+    }
+
+    .subcontainer-3 {
+        margin-top: 0px;
+    }
+
+    .subcontainer-sin-padding-bottom {
+        padding-bottom: 0px;
     }
 }
 
