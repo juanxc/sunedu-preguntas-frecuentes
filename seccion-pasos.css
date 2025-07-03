@@ -28,7 +28,7 @@
 
 .paso-texto-titulo{
     color: #636467;
-    font-size: clamp(14px, 2vw, 16px);;
+    font-size: clamp(13px, 2vw, 16px);;
     line-height: 1.4;
     padding: 0px 18px;
 }
@@ -88,5 +88,15 @@
 @media (max-width: 480px) {
     .pasos-container {
         margin-bottom: 12px;
+    }
+
+    .paso-titulo{
+        flex-direction: column;
+    }
+
+    .paso-texto-titulo {
+        padding: 0px 0px;
+        padding-top: 10px;
+        text-align: center;
     }
 }
