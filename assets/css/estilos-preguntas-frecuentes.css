@@ -7,15 +7,15 @@
 @font-face {
     font-family: "Poppins-Bold";
     src:
-        url("/assets/fonts/Poppins-Bold.otf") format("opentype"),
-        url("/assets/fonts/Poppins-Bold.ttf") format("truetype");
+        url("../fonts/Poppins-Bold.otf") format("opentype"),
+        url("../fonts/Poppins-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Poppins-Medium";
     src:
-        url("/assets/fonts/Poppins-Medium.otf") format("opentype"),
-        url("/assets/fonts/Poppins-Medium.ttf") format("truetype");
+        url("../fonts/Poppins-Medium.otf") format("opentype"),
+        url("../fonts/Poppins-Medium.ttf") format("truetype");
 }
 
 * {
@@ -237,35 +237,35 @@ h3 {
 }
 
 .img-left-part-ci {
-    background: url("/assets/icons/constancia-inscripcion.png");
+    background: url("../icons/constancia-inscripcion.png");
 }
 
 .img-left-part-cv {
-    background: url("/assets/icons/constancia-verificacion.png");
+    background: url("../icons/constancia-verificacion.png");
 }
 
 .img-left-part-rg {
-    background: url("/assets/icons/reconocimiento-grados.png");
+    background: url("../icons/reconocimiento-grados.png");
 }
 
 .img-left-part-dd {
-    background: url("/assets/icons/devolucion-dinero.png");
+    background: url("../icons/devolucion-dinero.png");
 }
 
 .img-left-part-rng {
-    background: url("/assets/icons/registro-nacional-grados.png");
+    background: url("../icons/registro-nacional-grados.png");
 }
 
 .img-left-part-aa {
-    background: url("/assets/icons/acervo-academico.png");
+    background: url("../icons/acervo-academico.png");
 }
 
 .img-left-part-de {
-    background: url("/assets/icons/denuncias.png");
+    background: url("../icons/denuncias.png");
 }
 
 .img-left-part-dc {
-    background: url("/assets/icons/direccion-contacto.png");
+    background: url("../icons/direccion-contacto.png");
 }
 
 .txtUpOps {
