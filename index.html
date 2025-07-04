@@ -1,10 +1,683 @@
+<!-- 
+  Author: Juan Castro
+  Copyright © 2025 Juan Castro. All rights reserved.
+  Description: Pagina de Preguntas Frecuentes de SUNEDU
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta http-equiv="refresh" content="0; url=preguntas-frecuentes.html" />
-    <title>Redirecting...</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Juan Castro">
+    <meta name="copyright" content="© 2025 Juan Castro">
+    <title>Preguntas Frecuentes</title>
+    <link rel="icon" type="image/png" href="https://enlinea.sunedu.gob.pe/img/sunedu-logo-small.png">
+    <link rel="stylesheet" href="assets/css/estilos-preguntas-frecuentes.css" />
+    <link rel="stylesheet" href="assets/css/metodos-pago.css" />
+    <link rel="stylesheet" href="assets/css/seccion-pasos.css" />
 </head>
+
 <body>
-    <p>If you are not redirected automatically, follow this <a href="preguntas-frecuentes.html">link</a>.</p>
+    <div class="container">
+        <!-- <div style="float: right; justify-content: right; margin: 0px;">
+            <div class="btnCloseModal"></div>
+        </div> -->
+
+        <h1 class="title">
+            PREGUNTAS <span class="highlight">FRECUENTES</span>
+        </h1>
+
+        <div class="divider"></div>
+
+        <!-- todas las opciones de preguntas frecuentes -->
+        <section id="opciones">
+            <div class="buttons-grid">
+                <div class="centered-row">
+                    <button class="button-inicio cyan" onclick="goToSection('constancia-inscripcion')">
+                        Constancia<br>de Inscripción
+                    </button>
+        
+                    <button class="button-inicio cyan" onclick="goToSection('constancia-verificacion')">
+                        Constancia<br>de Verificación
+                    </button>
+                </div>
+        
+                <button class="button-inicio blue" onclick="goToSection('reconocimiento-grados')">
+                    Reconocimiento de<br>Grados y títulos otorgados<br>en el extranjero
+                </button>
+        
+                <button class="button-inicio blue" onclick="goToSection('metodos-pago')">
+                    Métodos de Pago
+                </button>
+        
+                <button class="button-inicio blue" onclick="goToSection('acervo-academico')">
+                    Acervo académico<br>(Constancia de Ingreso,<br>Egreso, etc).
+                </button>
+        
+                <a href="https://www.sunedu.gob.pe/lista-de-universidades-licenciadas/" target="_blank"
+                    class="button-inicio blue">
+                    Universidades<br>licenciadas
+                </a>
+        
+                <a href="https://www.sunedu.gob.pe/lista-de-universidades-denegadas/" target="_blank"
+                    class="button-inicio blue">
+                    Universidades con<br>licencia denegada
+                </a>
+        
+                <button class="button-inicio blue" onclick="goToSection('devolucion-dinero')">
+                    Devolución<br>de Dinero
+                </button>
+        
+                <div class="centered-row">
+                    <button class="button-inicio blue" onclick="goToSection('denuncias')">
+                        Denuncias
+                    </button>
+        
+                    <button class="button-inicio blue" onclick="goToSection('direccion-contacto')">
+                        Dirección y<br>Contacto
+                    </button>
+                </div>
+        
+            </div>
+        </section>
+        
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion constancia de inscripcion -->
+        <section id="constancia-inscripcion">
+            <div class="cuadro-container cuadro-container-with-button-medium">
+                <div class="cuadro-body cuadro-body-with-button-medium">
+                    <div class="left-part">
+                        <div class="recuadro-left">
+                            <div class="img-left-part-ci img-link"></div>
+                            <div class="recuadro-titulo"><span class="txtUpOps">Solicita tu</span><br><span
+                                    class="txtDownOps">Constancia de
+                                    Inscripción</span></div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="subcontainer">
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUÉ ES?</div>
+                                <div class="respuesta">Es un documento que acredita que el grado académico o título
+                                    universitario se
+                                    encuentra registrado ante la SUNEDU.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUIÉNES LA SOLICITAN?</div>
+                                <div class="respuesta">Los ciudadanos, instituciones, colegios profesionales, centros
+                                    laborales,
+                                    entre otros.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">
+                                    <span>¿CUÁL ES EL COSTO?</span>
+                                    <button class="button-small">S/ 10.00</button>
+                                </div>
+                            </div>
+                            <div class="texto-informativo-container">
+                                <div class="texto-informativo">Si tu grado o título no figura en el registro, debes
+                                    comunicarte con <span class="hide-on-small"><br></span> tu casa de estudios para que
+                                    solicite la inscripción ante Sunedu.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="divider-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cuadro-botones">
+                    <button class="button-medium" onclick="goToSection('metodos-pago')"><span class="bm-text">Métodos de
+                            Pago</span><span class="arrow-unicode">⟶</span></button>
+                    <a class="button-medium pagalo-btn-texto-largo" href="https://enlinea.sunedu.gob.pe/" target="_blank"><span
+                            class="bm-text">Emitir Constancia Online</span><span class="arrow-unicode">⟶</span></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion constancia de verificacion -->
+        <section id="constancia-verificacion">
+            <div class="cuadro-container cuadro-container-with-button-medium">
+                <div class="cuadro-body cuadro-body-with-button-medium">
+                    <div class="left-part">
+                        <div class="recuadro-left">
+                            <div class="img-left-part-cv img-link"></div>
+                            <div class="recuadro-titulo"><span class="txtUpOps">Solicita tu</span><br><span
+                                    class="txtDownOps">Constancia de
+                                    Verificación<br>de Datos de Autoridades</span></div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="subcontainer">
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUÉ ES?</div>
+                                <div class="respuesta">Es un documento que acredita que el secretario general o la
+                                    autoridad que haga sus veces en su casa de estudios, se encuentra registrada.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿PARA QUÉ SE SOLICITA?</div>
+                                <div class="respuesta">Para presentar el documento en trámites en colegios profesionales
+                                    o en el Ministerio de Relaciones Exteriores, en caso de que se necesiten apostillar
+                                    los documentos para el extranjero.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿CUÁLES SON LAS CONDICIONES?</div>
+                                <div class="respuesta">a. Que sea un documento académico.<br>b. Que tenga los datos del
+                                    ciudadano interesado.<br>c. Que el documento esté firmado por el Secretario General
+                                    o la autoridad que haga sus veces. </div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">
+                                    <span>¿CUÁL ES EL COSTO?</span>
+                                    <button class="button-small">S/ 13.10</button>
+                                </div>
+                            </div>
+                            <div class="texto-informativo-container">
+                                <div class="texto-informativo"><b>RECUERDA QUE:</b><br>· Si es documento físico,
+                                    escanear y mantener colores originales.<br>· Si es documento digital, no editar el
+                                    archivo electrónico.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="divider-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cuadro-botones">
+                    <button class="button-medium" onclick="goToSection('metodos-pago')"><span class="bm-text">Métodos de
+                            Pago</span><span class="arrow-unicode">⟶</span></button>
+                    <a class="button-medium" href="https://enlinea.sunedu.gob.pe/" target="_blank"><span
+                            class="bm-text">Emitir Constancia Online</span><span class="arrow-unicode">⟶</span></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion reconocimiento de grados -->
+        <section id="reconocimiento-grados">    
+            <div class="cuadro-container cuadro-container-with-button-medium">
+                <div class="cuadro-body cuadro-body-with-button-medium">
+                    <div class="left-part">
+                        <div class="recuadro-left">
+                            <div class="img-left-part-rg img-link"></div>
+                            <div class="recuadro-titulo"><span class="txtUpOps">Solicitud virtual de<br>Reconocimiento
+                                    de </span><span class="txtDownOps">Grados<br>y Títulos Extranjeros</span></div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="subcontainer">
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUÉ ES?</div>
+                                <div class="respuesta">Es el acto administrativo mediante el cual la SUNEDU otorga
+                                    eficacia a los grados y/o títulos obtenidos en el extranjero, conforme a los
+                                    criterios de calidad o las obligaciones jurídicas asumidas por la República del Perú
+                                    en virtual de un tratado.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUIÉNES PUEDEN SOLICITARLO?</div>
+                                <div class="respuesta">Toda persona que haya obtenido un grado y/o título en el
+                                    extranjero.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿CÓMO SE REALIZA?</div>
+                                <div class="respuesta">· De manera virtual: envía los requisitos al correo
+                                    <span class="long-word">"reconocimientogradosytitulos@sunedu.gob.pe"</span>.<br>· De manera presencial: en nuestra
+                                    sede principal Calle Aldabas N° 337 - Urb. Las Gardenias, Santiago de Surco, en el
+                                    horario de Lunes a Viernes de 8:30 a.m. a 4:30 p.m. </div>
+                            </div>
+                            <div class="pregunta-container pregunta-container-ultima">
+                                <div class="pregunta">
+                                    <span>¿CUÁL ES EL COSTO?</span>
+                                    <button class="button-small">S/ 1188.50</button>
+                                </div>
+                                <div class="respuesta">· Migrante Retornado <button class="button-small">S/
+                                        594.25</button></div>
+                            </div>
+                            <div class="texto-informativo-container no-content">
+                                <div class="texto-informativo no-content"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="divider-right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cuadro-botones mas-de-dos-botones">
+                    <button class="button-medium" onclick="goToSection('metodos-pago')"><span class="bm-text">Métodos de
+                            Pago</span><span class="arrow-unicode">⟶</span></button>
+                    <a class="button-medium"
+                        href="https://www.sunedu.gob.pe/presentar-solicitud-reconocimiento-grados-titulos-forma-virtual/"
+                        target="_blank"><span class="bm-text">Inicia tu Trámite</span><span
+                            class="arrow-unicode">⟶</span></a>
+                    <a class="button-medium pagalo-btn-texto-largo"
+                        href="https://www.sunedu.gob.pe/procedimiento-de-reconocimiento-de-grados-y-titulos-extranjeros/"
+                        target="_blank"><span class="bm-text">Requisitos y más información</span><span
+                            class="arrow-unicode">⟶</span></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion metodos de pago -->
+        <section id="metodos-pago">
+            <div class="container-mp">
+                <h1 class="title-mp">MÉTODOS DE PAGO</h1>
+
+                <div class="payment-methods">
+                    <div class="method-card">
+                        <div class="icon-container">
+                            <img src="assets/icons/metodos-pago/web.png" alt="tramite via web" class="web-icon web-icon-tramite-via-web">
+                        </div>
+                        <h3 class="method-title">Trámite vía web:</h3>
+                        <p class="method-description">
+                            El pago se realiza a través de la web de Pagalo.pe
+                        </p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="icon-container">
+                            <img src="assets/icons/metodos-pago/wallet.png" alt="tramite presencial" class="web-icon">
+                        </div>
+                        <h3 class="method-title">Trámite presencial:</h3>
+                        <p class="method-description">
+                            El pago se realiza en nuestra ventanilla con tarjeta de crédito o débito, y con las
+                            aplicaciones Yape o Plin (Se escanea QR)
+                        </p>
+                    </div>
+
+                    <div class="method-card">
+                        <div class="icon-container">
+                            <img src="assets/icons/metodos-pago/cash-wallet.png" alt="tramite pago efectivo" class="web-icon">
+                        </div>
+                        <h3 class="method-title">¿Deseas pagar con efectivo?</h3>
+                        <p class="method-description">
+                            Deberás hacerlo en las entidades bancarias autorizadas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <div class="info-card">
+                        <div class="info-title">Constancias</div>
+                        <div class="info-content">
+                            <p>Los códigos de pago en el Banco de la Nación son:</p>
+                            <ul>
+                                <li>▪ CONSTANCIA DE INSCRIPCIÓN: <b>S/ 10.00</b> - CÓDIGO: <b>0001</b></li>
+                                <li>▪ CONSTANCIA DE VERIFICACIÓN: <b>S/ 13.10</b> - CÓDIGO: <b>0008</b></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-title">Reconocimiento</div>
+                        <div class="info-content">
+                            <p>Formas de pago para trámites de Reconocimiento: <b>S/1188.50</b></p>
+                            <ul>
+                                <li>▪ BANCO DE LA NACIÓN: CÓDIGO: <b>0003</b></li>
+                                <li>▪ SCOTIABANK (CÓDIGO DE VENTANILLA <b>03</b>)</li>
+                                <li>▪ A TRAVÉS DE LA APP DE INTERBANK O DE SCOTIABANK</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-button">
+                    <a href="https://pagalo.pe/" target="_blank" class="pagalo-btn">Ir a PAGALO.PE <span
+                            class="arrow-unicode">⟶</span></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion devolucion de dinero -->
+        <section id="devolucion-dinero">
+            <div class="cuadro-container devolucion-dinero-container">
+                <div class="cuadro-body">
+                    <div class="left-part">
+                        <div class="recuadro-left">
+                            <div class="img-left-part-dd img-link"></div>
+                            <div class="recuadro-titulo"><span class="txtUpOps">Devolución de </span><span
+                                    class="txtDownOps">Dinero</span></div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="subcontainer">
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿EN QUÉ CASO SE SOLICITA?</div>
+                                <div class="respuesta">Se solicita cuando un servicio pagado no fue realizado ante SUNEDU, por lo que tiene derecho a gestionar la devolución del dinero.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿PUEDE SOLICITARLO UN TERCERO?</div>
+                                <div class="respuesta">Si, mediante una carta poder simple.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">
+                                    <span>¿DONDE SE PUEDE SOLICITAR?</span>
+                                </div>
+                                <div class="respuesta">El trámite se realiza a través de la mesa de partes virtual o presencialmente, en nuestra Sede Principal de Santiago de Surco (Calle Aldabas N° 337 - Urb. Las Gardenias).</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">
+                                    <span>¿CUÁL ES EL PLAZO?</span>
+                                </div>
+                                <div class="respuesta">30 días hábiles.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pasos-container">
+                    <div class="pasos">
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 1</div><div class="paso-texto-titulo">Ingresa a la web de "Sunedu en línea", opción "Mesa de Partes":</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/devolucion-dinero-pasos/dd-paso1.png" /></div>
+                        </div>
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 2</div><div class="paso-texto-titulo">Registra tus datos y haz clic en siguiente:</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/devolucion-dinero-pasos/dd-paso2.png" /></div>
+                        </div>
+                    </div>
+                    
+                    <div class="pasos">
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 3</div><div class="paso-texto-titulo">Se deslizará una pestaña. Descarga los anexos y completa tus datos:</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/devolucion-dinero-pasos/dd-paso3.png" /></div>
+                        </div>
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 4</div><div class="paso-texto-titulo">Selecciona "Solicitud" en tipo de documento:</div></div>
+                            <div class="paso-contenido"><img class="paso-img paso-img-overflow" src="assets/icons/devolucion-dinero-pasos/dd-paso4.png" /></div>
+                        </div>
+                    </div>
+
+                    <div class="pasos">
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 5</div><div class="paso-texto-titulo">Selecciona la opción que corresponda.</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/devolucion-dinero-pasos/dd-paso5.png" /></div>
+                        </div>
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 6</div><div class="paso-texto-titulo">Una vez cargados los documentos deberás hacerle clic en "siguiente" y enviar.</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/devolucion-dinero-pasos/dd-paso6.png" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-button">
+                    <a href="https://enlinea.sunedu.gob.pe/" target="_blank" class="pagalo-btn">INICIA TU TRÁMITE <span
+                            class="arrow-unicode">⟶</span></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion registro nacional de grados -->
+        <section id="registro-nacional-grados">
+            <div class="cuadro-container">
+                <div class="cuadro-body">
+                    <div class="left-part">
+                        <div class="recuadro-left">
+                            <div class="img-left-part-rng img-link"></div>
+                            <div class="recuadro-titulo"><span class="txtUpOps">Registro Nacional</span><br><span class="txtUpOps">de </span><span
+                                    class="txtDownOps">Grados y Títulos</span></div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="subcontainer">
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUIÉN LO REALIZA?</div>
+                                <div class="respuesta">La presentación de la solicitud para el registro de grado académico o título profesional es responsabilidad de tu universidad o institución con rango universitario.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿CUÁL ES EL PLAZO?</div>
+                                <div class="respuesta">Es de 7 días hábiles desde que SUNEDU recibe la solicitud.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">
+                                    <span>¿PUEDO HACER EL SEGUIMIENTO AL TRÁMITE?</span>
+                                    <div class="respuesta">Sí, con el número de expediente otorgado a tu casa de estudios.</div>
+                                </div>
+                            </div>
+                            <div class="texto-informativo-container texto-informativo-container-rng">
+                                <div class="texto-informativo">¡RECUERDA! La Sunedu solo registra grados y títulos con rango universitario.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="divider-right divider-right-rng"></div>
+                        </div>
+                        <div class="subcontainer-2">
+                            <div class="pregunta-container">
+                                <div class="respuesta">Revisa aquí si tu casa de estudios tiene rango universitario:</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-button">
+                    <a href="https://www.sunedu.gob.pe/instituciones-con-rango-universitario/" target="_blank" class="pagalo-btn">CLICK AQUÍ <span
+                            class="arrow-unicode">⟶</span></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion acervo academico -->
+        <section id="acervo-academico">
+            <div class="cuadro-container devolucion-dinero-container">
+                <div class="cuadro-body">
+                    <div class="left-part">
+                        <div class="recuadro-left">
+                            <div class="img-left-part-aa img-link"></div>
+                            <div class="recuadro-titulo"><span class="txtUpOps">Acervo Académico</span><br><span class="txtUpOps">de </span><span
+                                    class="txtDownOps">Universidades</span><br><span class="txtDownOps">No Licenciadas</span></div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="subcontainer">
+                            <div class="pregunta-container">
+                                <div class="pregunta">¿QUÉ ES?</div>
+                                <div class="respuesta">Es la documentación académica otorgada por la institución cesada. La Sunedu remite copias simples de los documentos integrantes del acervo académico para los fines que los interesados estimen pertinentes.</div>
+                            </div>
+                            <div class="pregunta-container pregunta-container-fut">
+                                <div class="pregunta">¿CÓMO SE SOLICITA?</div>
+                                <div class="respuesta">A través de mesa de partes virtual o presencialmente en nuestra sede principal de Surco.</div>
+                            </div>
+                            <div class="button-fut">
+                                <a class="button-small button-small-fut" href="https://enlinea.sunedu.gob.pe/documentos/Formulario_unico_de_tramite.docx">DESCARGA EL FUT <span class="arrow-unicode">⟶</span></a>
+                            </div>
+                        </div>
+                        <div><div class="divider-right divider-right-aa"></div></div>
+                        <div class="subcontainer-2">
+                            <div class="pregunta-container">
+                                <div class="pregunta">
+                                    <span>¿CUÁL ES EL PLAZO DE ATENCIÓN?</span>
+                                </div>
+                                <div class="respuesta">El plazo es de 30 días hábiles desde presentada la solicitud.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta">
+                                    <span>¿TIENE ALGÚN COSTO?</span>
+                                </div>
+                                <div class="respuesta">No. El trámite es gratuito.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pasos-container">
+                    <div class="pasos">
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 1</div><div class="paso-texto-titulo">Ingresa a la web de "Sunedu en línea", opción "Mesa de Partes":</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/devolucion-dinero-pasos/dd-paso1.png" /></div>
+                        </div>
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 2</div><div class="paso-texto-titulo">Registra tus datos y haz clic en siguiente:</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/devolucion-dinero-pasos/dd-paso2.png" /></div>
+                        </div>
+                    </div>
+                    
+                    <div class="pasos">
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 3</div><div class="paso-texto-titulo">Se deslizará una pestaña. Descarga el "FUT" y completa tus datos:</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/acervo-academico-pasos/aa-paso3.png" /></div>
+                        </div>
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 4</div><div class="paso-texto-titulo">Selecciona "Solicitud" en tipo de documento:</div></div>
+                            <div class="paso-contenido"><img class="paso-img paso-img-overflow" src="assets/icons/devolucion-dinero-pasos/dd-paso4.png" /></div>
+                        </div>
+                    </div>
+
+                    <div class="pasos">
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 5</div><div class="paso-texto-titulo">Selecciona "Oficina de atención al ciudadano y gestión documental":</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/acervo-academico-pasos/aa-paso5.png" /></div>
+                        </div>
+                        <div class="paso-container">
+                            <div class="paso-titulo"><div class="paso-numero">PASO 6</div><div class="paso-texto-titulo">Una vez cargada la solicitud del "FUT" haz click en "Siguiente" y enviar.</div></div>
+                            <div class="paso-contenido"><img class="paso-img" src="assets/icons/devolucion-dinero-pasos/dd-paso6.png" /></div>
+                        </div>
+                    </div>
+                    <div class="subcontainer-2 subcontainer-2-texto-centrado">
+                        <div class="pregunta-container">
+                            <div class="respuesta">*En caso tu Universidad actualmente esté licenciada deberás solicitarle tus documentos directamente.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-button">
+                    <a href="https://www.sunedu.gob.pe/proceso-cese-actividades-universidades-escuelas-posgrado-flujograma/" target="_blank" class="pagalo-btn pagalo-btn-texto-largo">REVISA AQUÍ EL CESE DE UNIVERSIDADES <span
+                            class="arrow-unicode">⟶</span></a>
+                </div>
+            </div>
+        </section>
+        
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion denuncias -->
+        <section id="denuncias">
+            <div class="cuadro-container">
+                <div class="cuadro-body cuadro-body-sin-margin-bottom">
+                    <div class="left-part">
+                        <div class="recuadro-left">
+                            <div class="img-left-part-de img-link"></div>
+                            <div class="recuadro-titulo"><span class="txtUpOps">Denuncias</span></div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="subcontainer subcontainer-sin-padding-bottom">
+                            <div class="pregunta-container">
+                                <div class="pregunta pregunta-denuncia">1. ¿Quiénes pueden presentar denuncias ante la SUNEDU?</div>
+                                <div class="respuesta">Todas las personas sin necesidad de acreditar una afectación directa, mediante SUNEDU EN LÍNEA. opción "Denuncias en Línea", o presencialmente en nuestra sede de Santiago de Surco.</div>
+                            </div>
+                            <div class="pregunta-container">
+                                <div class="pregunta pregunta-denuncia">2. ¿A quiénes se puede denunciar ante la SUNEDU?</div>
+                                <div class="respuesta">
+                                    <ul>
+                                        <li>Instituciones con rango universitario que brindan servicios de educación superior universitaria en el territorio nacional.</li>
+                                        <li>Personas jurídicas bajo las normas de la SUNEDU.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pregunta-container pregunta-container-sin-margin-bottom">
+                                <div class="pregunta pregunta-denuncia"><span>3. ¿Qué debe contener mínimamente la denuncia?</span></div>
+                                <div class="respuesta">
+                                    <ul>
+                                        <li>Descripción precisa y clara de los hechos denunciados.</li>
+                                        <li>Documentos o cualquier medio de prueba que sustenten los hechos denunciados.</li>
+                                        <li>Identificación de la universidad o persona jurídica denunciada.</li>
+                                        <li>Correo electrónico válido para recibir notificaciones. Al consignar un correo electrónico usted AUTORIZA expresamente que se le notifique por este medio, por lo tanto, la respuesta que la SUNEDU le proporciona se entenderá como válidamente notificada, y en caso no se logre la notificación, esta se hará en el domicilio indicado en el formulario.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcontainer-3">
+                    <div class="pregunta-container">
+                        <div class="pregunta pregunta-denuncia"><span>4. ¿Cuáles son las competencias de SUNEDU y otras entidades con relación a la prestación del servicio educativo superior universitario?</span></div>
+                        <div class="respuesta">
+                            <ul>
+                                <li>En el ámbito de la Ley N° 30220 - Ley Universitaria, esta Superintendencia es responsable del licenciamiento de universidades para la prestación del servicio educativo superior universitario, la supervisión de la calidad universitaria y la fiscalización de los recursos públicos y beneficios otorgados por el marco legal a las universidades, destinados a fines educativos y al mejoramiento de la calidad.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-button">
+                    <a href="https://enlinea.sunedu.gob.pe/" target="_blank" class="pagalo-btn">Ingresar Denuncia <span
+                            class="arrow-unicode">⟶</span></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-sin-linea"></div>
+
+        <!-- seccion contacto -->
+        <section id="direccion-contacto">
+            <div class="cuadro-container">
+                <div class="cuadro-body">
+                    <div class="left-part">
+                        <div class="recuadro-left">
+                            <div class="img-left-part-dc img-link"></div>
+                            <div class="recuadro-titulo"><span class="txtUpOps">Dirección y contacto</span></div>
+                        </div>
+                    </div>
+                    <div class="right-part">
+                        <div class="subcontainer">
+                            <div class="pregunta-container">
+                                <div class="pregunta"><img class="contacto-icon" src="assets/icons/direccion-contacto/ubicacion.png" alt="sede central" /><span>SEDE CENTRAL:</span></div>
+                                <div class="respuesta">Calle Aldabas N° 337 - Urb. Las Gardenias (Cruce Av. Benavides y Av. Caminos del Inca) Santiago de Surco - Lima.<br>Horarios: L-V: <b>8:30 a.m. a 4:30 p.m.</b></div>
+                            </div>
+                            <div class="pregunta-container pregunta-container-fut">
+                                <div class="pregunta pregunta-contacto"><img class="contacto-icon" src="assets/icons/direccion-contacto/ubicacion.png" alt="centros mac" /><span>ATENCIÓN EN CENTROS MAC EN REGIONES DEL PERÚ</span></div>
+                                <div class="respuesta">
+                                    <ul class="mac-list">
+                                        <li>MAC Callao</li>
+                                        <li>MAC Cajamarca</li>
+                                        <li>MAC La Libertad</li>
+                                        <li>MAC Lima Este</li>
+                                        <li>MAC Cusco</li>
+                                        <li>MAC Loreto</li>
+                                        <li>MAC Lima Norte</li>
+                                        <li>MAC Junín</li>
+                                        <li>MAC Piura</li>
+                                        <li>MAC Arequipa</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="button-fut">
+                                <a class="button-small button-small-fut pagalo-btn-texto-largo button-text-align-center" href="https://www.gob.pe/institucion/sunedu/sedes" target="_blank">VER DIRECCIONES Y HORARIOS <span class="arrow-unicode">⟶</span></a>
+                            </div>
+                        </div>
+                        <div><div class="divider-right divider-right-aa"></div></div>
+                        <div class="subcontainer-2">
+                            <div class="pregunta-container">
+                                <div class="pregunta pregunta-contacto">
+                                    <img class="contacto-icon" src="assets/icons/direccion-contacto/telefono.png" alt="telefono" /><span> CENTRAL: (511) 500 - 3930</span>
+                                </div>
+                                <div class="respuesta respuesta-contacto"><img class="contacto-icon" src="assets/icons/direccion-contacto/site.png" alt="telefono" /> enlinea.sunedu.gob.pe</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-sin-linea"></div>
+    </div>
+
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="4" fill="white"/>
+            <path d="M24 32V16M24 16L16 24M24 16L32 24" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+
+    <script>
+        function goToSection(section) {
+            window.location.href = '#' + section;
+        }
+    </script>
 </body>
+
 </html>
