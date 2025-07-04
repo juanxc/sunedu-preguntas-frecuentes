@@ -1,3 +1,9 @@
+/* 
+  Author: Juan Castro
+  Copyright © 2025 Juan Castro. All rights reserved.
+  Description: Estilos para la sección pasos de la página de Preguntas Frecuentes de SUNEDU
+*/
+
 .pasos{
     display: flex;
     justify-content: space-between;
